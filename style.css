@@ -1,0 +1,112 @@
+/* Reset & Body */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #d8f570, #94ffd2);
+  font-family: 'Poppins', Arial, sans-serif;
+  transition: background 0.5s ease;
+}
+
+/* Card Styling */
+.card {
+  background: linear-gradient(145deg, #ffffff, #f0f4f8);
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+.card h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #0077b6;
+}
+
+/* Button Styling */
+button {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Result box */
+.result {
+  margin-top: 25px;
+  padding: 20px;
+  background: #e0f7fa;
+  border-radius: 15px;
+  text-align: left;
+  max-height: 260px;
+  overflow-y: auto;
+  /* scroll if content too long */
+  font-size: 14px;
+  color: #023e8a;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+  line-height: 1.6;
+  /* spacing between lines */
+  transition: all 0.3s ease;
+}
+
+/* Labels inside result */
+.result b {
+  display: inline-block;
+  width: 120px;
+  color: #0077b6;
+  font-weight: 600;
+}
+
+/* Spacing between each line */
+.result br {
+  margin-bottom: 10px;
+}
+
+/* Flag styling */
+.result img.flag {
+  display: block;
+  width: auto;           /* Keep original width */
+  max-width: 100%;       /* But don’t exceed container width */
+  height: 120px;         /* Set fixed height */
+  object-fit: contain;   /* Scale image without cropping or stretching */
+  margin: 15px auto 0 auto; /* Center horizontally */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result img.flag:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Optional: subtle background for each line */
+.result p {
+  margin: 8px 0;
+  padding: 5px 10px;
+  background: rgba(0, 119, 182, 0.05);
+  border-radius: 5px;
+}
